@@ -36,7 +36,7 @@ public class Person2 {
 		Random rand = new Random();
 		String used = new String();
 		while (used.length() < input.length()) {
-			int value = rand.nextInt(input.length);
+			int value = rand.nextInt(input.length());
 			char c = input.charAt(value);
 			if (!used.contains(Character.toString(c))) {
 				output = output + c;
